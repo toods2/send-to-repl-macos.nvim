@@ -1,6 +1,12 @@
 
 # send-to-repl.nvim
 
+This is a fork of: [send-to-repl.nvim](https://github.com/toreerdmann/send-to-repl.nvim) written by [toreerdmann](https://github.com/toreerdmann).
+
+I made a minor edit to the bracketed paste to play nice with MacOS.
+
+---
+
 A set of functions that makes copying code to a REPL easy. This can be useful when doing interactive data analysis.
 
 For python, it automatically detects your project environment, handles IPython profiles for you, and manages terminal splits natively—no Tmux required.

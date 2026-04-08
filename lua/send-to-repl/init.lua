@@ -178,7 +178,8 @@ local function send_text(text)
 	end
 
 	-- 3. Bracketed Paste Construction
-	local payload = "\27[200~" .. clean .. "\27[201~" .. ending
+	-- Modify to remove bracked paste escape characters for macos
+	local payload = clean .. ending
 
 	-- Helper to safely send
 	local function safe_send()
